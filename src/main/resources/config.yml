@@ -1,0 +1,2089 @@
+development:
+  debugmode: false
+  # Afradertje maar eh- ja.
+
+messages:
+  nopermission: "&cJij hebt hier geen permissies voor!"
+
+## Hint: Om het item te pakken, hou het item in je hand en gebruik /itemdb
+## Soms heeft een item een andere naam zo is bijvoorbeeld NETHER_WARD nu NETHER_STALK
+## Als je t opfucked, ben je hersenloos.
+
+categorieen:
+  spelers:
+    name: "&6YouTubers"
+    displayitem: 'BLAZE_POWDER'
+    items:
+      - vakonov2015
+      - dusdavid
+  kingdom:
+    name: "&2Kingdom"
+    displayitem: 'DIAMOND_SWORD'
+    items:
+      - myrelios
+      - ragtempos
+      - myrbora
+      - myreclypsa
+      - ragthanatos
+      - empion
+      - mephidantes
+      - malino
+      - myreclypsa2013
+      - gewoonjoris
+  ddgmensen:
+    name: "&c&lDDG &fMensen"
+    displayitem: 'NETHER_STALK'
+    items:
+      - dusdavid
+      - dusdavid2012
+      - dusdavidpop
+      - justchax2014
+      - weatherlight2016
+      - benderdt2017
+      - dendonia2018
+      - gewooncollin2019
+      - justchax2020
+      - stroopwafel2021
+      - melizr
+      - coolboy93
+      - fairygirl1984
+      - stefan076
+      - dtclej
+      - dyrenza
+      - danny026
+      - aarde
+      - happyviv
+      - hieristim
+      - ditisluuk
+      - broodjeelias
+      - cascomp
+      - dropfayter
+      - beerco
+      - pompoenmelissa
+      - vampierdanny
+      - zombiedavid
+      - spookthewiz76
+      - tovernaartimewalk
+  mobs:
+    name: "&aMobs"
+    displayitem: 'MONSTER_EGG'
+    items:
+      - alex
+      - steve
+      - squid
+      - bigsquid
+      - sheep
+      - bigsheep
+      - parrot
+      - goldenparrot
+      - bigparrot
+      - horse
+      - bighorse
+      - polarbear
+      - creeper
+      - bigcreeper
+      - skeleton
+      - chicken
+      - enderman
+      - bigenderman
+      - slime
+      - bigslime
+      - goldenslime
+      - snowslime
+      - blaze
+      - guardian
+      - bigblaze
+  pokemon:
+    name: "&ePokemon"
+    displayitem: 'SLIME_BALL'
+    items:
+      - pikachu
+      - goldenpickachu
+      - bigpikachu
+      - snorlax
+      - kerstsnorlax
+      - bigsnorlax
+      - cubone
+      - bigcubone
+      - eevee
+      - bigeevee
+      - ditto
+      - charmander
+      - bigcharmander
+      - squirtle
+      - bigsquirtle
+      - bulbasaur
+      - bigbulbasaur
+      - alakazam
+      - bigalakazam
+      - shinygyarados
+  film:
+    name: "&3Film Karakters"
+    displayitem: 'DIAMOND_HELMET'
+    items:
+      - mickey
+      - goldenmickey
+      - bigmickey
+      - minnie
+      - bigminnie
+      - pluto
+      - donald
+      - bigdonald
+      - katrien
+      - bigkatrien
+      - goofy
+      - biggoofy
+      - elsa
+      - anna
+      - olaf
+      - olafpop
+      - bigolaf
+      - sven
+      - goldensven
+      - svenkerst
+      - bigsven
+  game:
+    name: "&dGame Karakters"
+    displayitem: 'IRON_HELMET'
+    items:
+      - mario
+      - peach
+      - toad
+      - luigi
+      - goomba
+  anders:
+    name: "&bAnders"
+    displayitem: 'BOOK'
+    items:
+      - frankenstein
+      - edwin
+      - 6jaarmt
+      - 6jaarmtpop
+      - 6jaarrelic
+      - 6jaarrelicpop
+  trophys:
+    name: "&e&l✧ &6&oTrophies &e&l✧"
+    displayitem: 'GOLDEN_CARROT'
+    items:
+      - 1jaarbronze
+      - 1jaarsilver
+      - 1jaargold
+      - 1jaardiamond
+      - bronzebucket
+      - bronzebucket2
+      - silverbucket
+      - silverbucket2
+      - goldenbucket
+      - goldenbucket2
+      - carbronze
+      - carsilver
+      - cargold
+      - carshowbronze
+      - carshowsilver
+      - carshowgold
+      - cruiserbronze
+      - cruiserbronze2
+      - cruisersilver
+      - cruisersilver2
+      - cruisergold
+      - cruisergold2
+      - dragracebronze
+      - dragracebronze2
+      - dragracesilver
+      - dragracesilver2
+      - dragracegold
+      - dragracegold2
+      - herobeker
+      - heromyreclypsa
+      - heromyreleios
+      - herotimewalk
+      - legendbeker
+      - legenddanny026
+      - legendduffy
+      - legendwiz
+      - managertrofee
+      - miragebronze
+      - miragebronze2
+      - miragesilver
+      - miragesilver2
+      - miragegold
+      - miragegold2
+      - btrophy
+      - strophy
+  trophys2:
+    name: "&3&l✧ &b&oTrophies (2) &3&l✧"
+    displayitem: 'GOLD_BARDING'
+    items:
+      - gtrophy
+      - oilsjt
+      - omegabronze
+      - omegasilver
+      - omegagold
+      - pistonbronze
+      - pistonsilver
+      - pistongold
+      - racertrofee
+      - rangetrophiebronze
+      - rangetrophiesilver
+      - rangetrophiegold
+      - seasondennisdm
+      - seasondusdavid
+      - seasonemiliyo
+      - seasonluukhiddde
+      - seasonra4004
+      - stallionbronze
+      - stallionbronze2
+      - stallionsilver
+      - stallionsilver2
+      - stalliongold
+      - stalliongold2
+      - talenttrofee
+      - tirebronze
+      - tiresilver
+      - tiregold
+      - vanbronze
+      - vansilver
+      - vangold
+      - scooterbronze
+      - scootersilver
+      - scootergold
+
+items:
+  niks:
+    item: SEEDS
+    name: "&fPrecies niks...."
+    nbt:
+      key: "mtcustom"
+      value: "aids"
+    lore:
+      - '&7Ja niks is niet veel'
+    height: 0.26
+
+  ## YouTubers
+  vakonov2015:
+    item: IRON_INGOT
+    name: "&fVakanov (2015)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_vakonov_2015"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dusdavid:
+    item: IRON_INGOT
+    name: "&fdusdavid"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dusdavid"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dusdavid2012:
+    item: IRON_INGOT
+    name: "&fdusdavid (2012)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dusdavid_2012"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dusdavidpop:
+    item: IRON_INGOT
+    name: "&fdusdavid (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_dusdavid"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+  ## Kingdom
+  myrelios:
+    item: IRON_INGOT
+    name: "&fMyrelios"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_myrelios"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  ragtempos:
+    item: IRON_INGOT
+    name: "&fRagtempos"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_ragtempos"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  ragterros:
+    item: IRON_INGOT
+    name: "&fRagterros"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_ragterros"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  myrbora:
+    item: IRON_INGOT
+    name: "&fMyrbora"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_myrbora"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  myreclypsa:
+    item: IRON_INGOT
+    name: "&fMyreclypsa"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_myreclypsa"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  ragthanatos:
+    item: IRON_INGOT
+    name: "&fRagthanatos"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_rahthanatos"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  empion:
+    item: IRON_INGOT
+    name: "&fEmpion"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_empion"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  mephidantes:
+    item: IRON_INGOT
+    name: "&fMephidantes"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_mephidantes"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  malino:
+    item: IRON_INGOT
+    name: "&fMalino"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_malino"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  myreclypsa2013:
+    item: IRON_INGOT
+    name: "&fMyreclypsa (2013)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_myreclypsa_2013"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  gewoonjoris:
+    item: IRON_INGOT
+    name: "&fGewoonJoris"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_gewoonjoris"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+    #tot hier imported
+
+  ## DDG Mensen
+  justchax2014:
+    item: IRON_INGOT
+    name: "&fJustChax (2014)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_justchax_2014"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  weatherlight2016:
+    item: IRON_INGOT
+    name: "&fWeatherlight (2016)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_weatherlight_2016"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  benderdt2017:
+    item: IRON_INGOT
+    name: "&fBenderdt (2017)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_benderdt_2017"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dendonia2018:
+    item: IRON_INGOT
+    name: "&fdendonia (2018)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dendonia_2018"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  gewooncollin2019:
+    item: IRON_INGOT
+    name: "&fGewoon_collin (2019)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_gewoon_collin_2019"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  justchax2020:
+    item: IRON_INGOT
+    name: "&fJustChax (2020)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_justchax_2020"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  stroopwafel2021:
+    item: IRON_INGOT
+    name: "&f_stroopwafel (2021)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos__stroopwafel"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  melizr:
+    item: IRON_INGOT
+    name: "&fMelizr"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_melis"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  coolboy93:
+    item: IRON_INGOT
+    name: "&fCoolboy93"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_coolboy93"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  fairygirl1984:
+    item: IRON_INGOT
+    name: "&ffairygirl1984"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_fairygirl1984"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  stefan076:
+    item: IRON_INGOT
+    name: "&fStefan_076"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_stefan_076"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dtclej:
+    item: IRON_INGOT
+    name: "&fDtclej"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dtclej"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dyrenza:
+    item: IRON_INGOT
+    name: "&fDyrenza"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dyrenza"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  danny026:
+    item: IRON_INGOT
+    name: "&fDanny026"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_danny026"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  aarde:
+    item: IRON_INGOT
+    name: "&fAarde"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_aarde"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  happyviv:
+    item: IRON_INGOT
+    name: "&fHappyviv"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_happyviv"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  hieristim:
+    item: IRON_INGOT
+    name: "&fhieristim"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_hieristim"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  ditisluuk:
+    item: IRON_INGOT
+    name: "&fDitIsLuuk"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_ditisluuk"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  broodjeelias:
+    item: IRON_INGOT
+    name: "&fBroodjeElias"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_broodjeelias"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  cascomp:
+    item: IRON_INGOT
+    name: "&f"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_cascompedwin"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  dropfayter:
+    item: IRON_INGOT
+    name: "&fdropfayter"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_dropfayter"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  beerco:
+    item: IRON_INGOT
+    name: "&fBeerCO"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_beerco"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  pompoenmelissa:
+    item: IRON_INGOT
+    name: "&fPompoen Melissa"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_pompoen_melissa"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  vampierdanny:
+    item: IRON_INGOT
+    name: "&fVampier Danny"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_vampier_danny"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  zombiedavid:
+    item: IRON_INGOT
+    name: "&fZombie David"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_zombie_david"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  spookthewiz76:
+    item: IRON_INGOT
+    name: "&fSpook_The_Wiz76"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_spook_the_wiz76"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  tovernaartimewalk:
+    item: IRON_INGOT
+    name: "&fTovernaar TimeWalk"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_tovenaar_timewalk"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+  ## MOBS
+  alex:
+    item: IRON_INGOT
+    name: "&fAlex"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_alex"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  steve:
+    item: IRON_INGOT
+    name: "&fSteve"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_steve"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  squid:
+    item: IRON_INGOT
+    name: "&fSquid"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_squid"
+    lore:
+      - '&7Verzamel item'
+  bigsquid:
+    item: IRON_INGOT
+    name: "&fSquid (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_squid"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  sheep:
+    item: IRON_INGOT
+    name: "&fSheep"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_sheep"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigsheep:
+    item: IRON_INGOT
+    name: "&fSheep (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_sheep"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  parrot:
+    item: IRON_INGOT
+    name: "&fParrot"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_parrot"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goldenparrot:
+    item: IRON_INGOT
+    name: "&6Golden Parrot"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_golden_parrot"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigparrot:
+    item: IRON_INGOT
+    name: "&fParrot (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_parrot"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  horse:
+    item: IRON_INGOT
+    name: "&fHorse"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_horse"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bighorse:
+    item: IRON_INGOT
+    name: "&fHorse (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_horse"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  polarbear:
+    item: IRON_INGOT
+    name: "&fPolar Bear"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_polarbear"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  creeper:
+    item: IRON_INGOT
+    name: "&fCreeper"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_creeper"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigcreeper:
+    item: IRON_INGOT
+    name: "&fCreeper (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_creeper"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  skeleton:
+    item: IRON_INGOT
+    name: "&fSkeleton"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_skeleton"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  chicken:
+    item: IRON_INGOT
+    name: "&fChicken"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_chicken"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  enderman:
+    item: IRON_INGOT
+    name: "&fEnderman"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_enderman"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigenderman:
+    item: IRON_INGOT
+    name: "&fEnderman (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_enderman"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  slime:
+    item: IRON_INGOT
+    name: "&fSlime"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_slime"
+    lore:
+      - '&7Verzamel item'
+  goldenslime:
+    item: IRON_INGOT
+    name: "&6Golden Slime"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_golden_slime"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  snowslime:
+    item: IRON_INGOT
+    name: "&fS&n&fo&7w &fS&7l&fi&7m&fe"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_snow_slime"
+    lore:
+      - '&7Verzamel item'
+  bigslime:
+    item: IRON_INGOT
+    name: "&fSlime (Pop)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_slime"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  blaze:
+    item: IRON_INGOT
+    name: "&fBlaze"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_blaze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigblaze:
+    item: IRON_INGOT
+    name: "&fBlaze (Pop)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_blaze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  guardian:
+    item: IRON_INGOT
+    name: "&fGuardian"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_guardian"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  enderdragon:
+    item: IRON_INGOT
+    name: "&fEnderdragon"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_enderdragon"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+
+  ## POKEMON! GOTTA CATH THEM ALLLLLL
+  pikachu:
+    item: IRON_INGOT
+    name: "&fPikachu"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_pikachu"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goldenpickachu:
+    item: IRON_INGOT
+    name: "&6Golden Pickachu"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_golden_pikachu"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigpikachu:
+    item: IRON_INGOT
+    name: "&fPickachu (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_pikachu"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  snorlax:
+    item: IRON_INGOT
+    name: "&fSnorlax"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_snorlax"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  kerstsnorlax:
+    item: IRON_INGOT
+    name: "&2K&2e&2r&4s&2t &fSnorlax"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_kerst_snorlax"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigsnorlax:
+    item: IRON_INGOT
+    name: "&fSnorlax (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_snorlax"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  cubone:
+    item: IRON_INGOT
+    name: "&fCubone"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_cubone"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigcubone:
+    item: IRON_INGOT
+    name: "&fCubone (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_cubone"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  eevee:
+    item: IRON_INGOT
+    name: "&fEevee"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_eevee"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigeevee:
+    item: IRON_INGOT
+    name: "&fEevee (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_eevee"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  ditto:
+    item: IRON_INGOT
+    name: "&fDitto"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_ditto"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  charmander:
+    item: IRON_INGOT
+    name: "&fCharmander"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_charmander"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigcharmander:
+    item: IRON_INGOT
+    name: "&fCharmander (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_charmander"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  squirtle:
+    item: IRON_INGOT
+    name: "&fSquirtle"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_squirtle"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigsquirtle:
+    item: IRON_INGOT
+    name: "&fSquirtle (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_squirtle"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bulbasaur:
+    item: IRON_INGOT
+    name: "&fBulbasaur"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_bulbasaur"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigbulbasaur:
+    item: IRON_INGOT
+    name: "&fBulbasaur (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_bulbasaur"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  alakazam:
+    item: IRON_INGOT
+    name: "&fAlakazam"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_alakazam"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigalakazam:
+    item: IRON_INGOT
+    name: "&fAlakazam (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_alakazam"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  shinygyarados:
+    item: IRON_INGOT
+    name: "&fShiny Gyarados"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_shiny_gyarados"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+
+  ## FILM KARAKTERS!
+  mickey:
+    item: IRON_INGOT
+    name: "&fMickey"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_mickey"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goldenmickey:
+    item: IRON_INGOT
+    name: "&6Golden Mickey"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_golden_mickey"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigmickey:
+    item: IRON_INGOT
+    name: "&fMickey (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_mickey"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  minnie:
+    item: IRON_INGOT
+    name: "&fMinnie"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_minnie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigminnie:
+    item: IRON_INGOT
+    name: "&fMinnie (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_minnie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  pluto:
+    item: IRON_INGOT
+    name: "&fPluto"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_pluto"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  donald:
+    item: IRON_INGOT
+    name: "&fDonald"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_donald"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigdonald:
+    item: IRON_INGOT
+    name: "&fDonald (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_donald"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  katrien:
+    item: IRON_INGOT
+    name: "&fKatrien"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_katrien"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigkatrien:
+    item: IRON_INGOT
+    name: "&fKatrien (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_katrien"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goofy:
+    item: IRON_INGOT
+    name: "&fGoofy"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_goofy"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  biggoofy:
+    item: IRON_INGOT
+    name: "&fGoofy (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_goofy"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  elsa:
+    item: IRON_INGOT
+    name: "&fElsa"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_elsa"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  anna:
+    item: IRON_INGOT
+    name: "&fAnna"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_anna"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  olaf:
+    item: IRON_INGOT
+    name: "&fOlaf"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_olaf"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  olafpop:
+    item: IRON_INGOT
+    name: "&fOlaf (Pop)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_olaf"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigolaf:
+    item: IRON_INGOT
+    name: "&fOlaf (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_olaf"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  sven:
+    item: IRON_INGOT
+    name: "&fSven"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_sven"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goldensven:
+    item: IRON_INGOT
+    name: "&6Golden Sven"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_golden_sven"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  svenkerst:
+    item: IRON_INGOT
+    name: "&2K&4e&2r&4s&2t &fSven"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_sven_kerst"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  bigsven:
+    item: IRON_INGOT
+    name: "&fSven (Big)"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_big_sven"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+
+  ## GAME KARAKTERS!
+  mario:
+    item: IRON_INGOT
+    name: "&fMario"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_mario"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  peach:
+    item: IRON_INGOT
+    name: "&fPrinses Peach"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_peach"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  toad:
+    item: IRON_INGOT
+    name: "&fToad"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_toad"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  luigi:
+    item: IRON_INGOT
+    name: "&fLuigi"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_luigi"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  goomba:
+    item: IRON_INGOT
+    name: "&fGoomba"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_goomba"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+
+  ## ANDERS
+  frankenstein:
+    item: IRON_INGOT
+    name: "&fFrankenstein"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_frankenstein"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  edwin:
+    item: IRON_INGOT
+    name: "&fEdwin"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_edwin"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  6jaarmt:
+    item: IRON_INGOT
+    name: "&f6 Jaar MT"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_6_jaar_mt"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  6jaarmtpop:
+    item: IRON_INGOT
+    name: "&f6 Jaar MT"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_6_jaar_mt"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  6jaarrelic:
+    item: IRON_INGOT
+    name: "&f6 Jaar Relic"
+    nbt:
+      key: "mtcustom"
+      value: "funko_doos_6_jaarrelic_mt"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  6jaarrelicpop:
+    item: IRON_INGOT
+    name: "&f6 Jaar Relic"
+    nbt:
+      key: "mtcustom"
+      value: "funko_pop_6_jaarrelic_mt"
+    lore:
+      - '&7Verzamel item'
+    height: 0.01
+
+
+
+  ## TROPHYS
+  1jaarbronze:
+    item: IRON_INGOT
+    name: "&fBronze Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bronze_trophie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  1jaargold:
+    item: IRON_INGOT
+    name: "&fGolden Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "golden_trophie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  1jaarsilver:
+    item: IRON_INGOT
+    name: "&fSilver Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "silver_trophie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  1jaardiamond:
+    item: IRON_INGOT
+    name: "&fDiamond Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "diamond_trophie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  bronzebucket:
+    item: IRON_INGOT
+    name: "&fBronze Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  bronzebucket2:
+    item: IRON_INGOT
+    name: "&fBronze Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_bronze2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  goldenbucket:
+    item: IRON_INGOT
+    name: "&fGolden Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  goldenbucket2:
+    item: IRON_INGOT
+    name: "&fGolden Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_gold2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  silverbucket:
+    item: IRON_INGOT
+    name: "&fSivler Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  silverbucket2:
+    item: IRON_INGOT
+    name: "&fSilver Bucket Trophie"
+    nbt:
+      key: "mtwcustom"
+      value: "bucket_trophie_silver2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+
+  carbronze:
+    item: IRON_INGOT
+    name: "&fCar Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "car_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  carsilver:
+    item: IRON_INGOT
+    name: "&fCar Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "car_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  cargold:
+    item: IRON_INGOT
+    name: "&fCar Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "car_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.26
+  carshowbronze:
+    item: IRON_INGOT
+    name: "&fCarshow Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "carshow_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  carshowsilver:
+    item: IRON_INGOT
+    name: "&fCarshow Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "carshow_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  carshowgold:
+    item: IRON_INGOT
+    name: "&fCarshow Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "carshow_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+
+  cruiserbronze:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  cruiserbronze2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Bronze 2"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_bronze2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  cruisersilver:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  cruisersilver2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Silver 2"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_silver2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  cruisergold:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  cruisergold2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Gold 2"
+    nbt:
+      key: "mtwcustom"
+      value: "cruiser_trophie_gold2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracebronze:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracebronze2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Bronze 2"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_bronze2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracesilver:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracesilver2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Silver 2"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_silver2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracegold:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  dragracegold2:
+    item: IRON_INGOT
+    name: "&fCruiser Trophie Gold 2"
+    nbt:
+      key: "mtwcustom"
+      value: "dragrace_trophie_gold2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  herobeker:
+    item: IRON_INGOT
+    name: "&fHero Beker"
+    nbt:
+      key: "mtcustom"
+      value: "hero_beker"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  heromyreclypsa:
+    item: IRON_INGOT
+    name: "&fHero MyrEclypsa"
+    nbt:
+      key: "mtcustom"
+      value: "hero_myreclypsa"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  heromyreleios:
+    item: IRON_INGOT
+    name: "&fHero MyrEleios"
+    nbt:
+      key: "mtcustom"
+      value: "hero_myreleios"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  herotimewalk:
+    item: IRON_INGOT
+    name: "&fHero TimeWalk"
+    nbt:
+      key: "mtcustom"
+      value: "hero_timewalk"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+
+
+  managertrofee:
+    item: IRON_INGOT
+    name: "&fManager Trofee"
+    nbt:
+      key: "mtcustom"
+      value: "manager_trofee"
+    lore:
+      - '&7Verzamel item'
+    height: 0.92
+
+  legendbeker:
+    item: IRON_INGOT
+    name: "&fLegend Beker"
+    nbt:
+      key: "mtcustom"
+      value: "legend_beker"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  legenddanny026:
+    item: IRON_INGOT
+    name: "&fLegend Danny026"
+    nbt:
+      key: "mtcustom"
+      value: "legend_danny026"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  legendduffy:
+    item: IRON_INGOT
+    name: "&fLegend Duffy"
+    nbt:
+      key: "mtcustom"
+      value: "legend_duffy"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+  legendwiz:
+    item: IRON_INGOT
+    name: "&fLegend thewiz76"
+    nbt:
+      key: "mtcustom"
+      value: "legend_thewiz76"
+    lore:
+      - '&7Verzamel item'
+    height: 0.28
+
+
+  miragebronze:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  miragebronze2:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Bronze 2"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_bronze2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  miragesilver:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  miragesilver2:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Silver 2"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_silver2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  miragegold:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  miragegold2:
+    item: IRON_INGOT
+    name: "&fMirage Trophie Gold 2"
+    nbt:
+      key: "mtwcustom"
+      value: "mirage_trophie_gold2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  btrophy:
+    item: IRON_INGOT
+    name: "&fB Trophy"
+    nbt:
+      key: "mtcustom"
+      value: "btrophy1"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  strophy:
+    item: IRON_INGOT
+    name: "&fS Trophy"
+    nbt:
+      key: "mtcustom"
+      value: "strophy1"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  gtrophy:
+    item: IRON_INGOT
+    name: "&fG Trophy"
+    nbt:
+      key: "mtcustom"
+      value: "gtrophy1"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  oilsjt:
+    item: IRON_INGOT
+    name: "&fOilsjt"
+    nbt:
+      key: "mtwcustom"
+      value: "oilsjt_trophie"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  omegabronze:
+    item: IRON_INGOT
+    name: "&fOmega Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "omega_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  omegasilver:
+    item: IRON_INGOT
+    name: "&fOmega Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "omega_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  omegagold:
+    item: IRON_INGOT
+    name: "&fOmega Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "omega_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  pistonbronze:
+    item: IRON_INGOT
+    name: "&fPiston Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "piston_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  pistonsilver:
+    item: IRON_INGOT
+    name: "&fPiston Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "piston_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  pistongold:
+    item: IRON_INGOT
+    name: "&fPiston Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "piston_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  racertrofee:
+    item: IRON_INGOT
+    name: "&fRacer Trofee"
+    nbt:
+      key: "mtcustom"
+      value: "racer_trofee"
+    lore:
+      - '&7Verzamel item'
+    height: 0.93
+  rangetrophiebronze:
+    item: IRON_INGOT
+    name: "&fRanger Trophie Bronze"
+    nbt:
+      key: "mtcustom"
+      value: "range_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  rangetrophiesilver:
+    item: IRON_INGOT
+    name: "&fRanger Trophie Silver"
+    nbt:
+      key: "mtcustom"
+      value: "range_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  rangetrophiegold:
+    item: IRON_INGOT
+    name: "&fRanger Trophie Gold"
+    nbt:
+      key: "mtcustom"
+      value: "range_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  btrophy1:
+    item: IRON_INGOT
+    name: "&fRanger Trophie Gold"
+    nbt:
+      key: "mtcustom"
+      value: "btrophy1"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  seasondennisdm:
+    item: IRON_INGOT
+    name: "&fSeason Trophie "
+    nbt:
+      key: "mtwcustom"
+      value: "season_trophie_dennisdm"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  seasondusdavid:
+    item: IRON_INGOT
+    name: "&fSeason Trophie "
+    nbt:
+      key: "mtwcustom"
+      value: "season_trophie_dusdavid"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  seasonemiliyo:
+    item: IRON_INGOT
+    name: "&fSeason Trophie "
+    nbt:
+      key: "mtcustom"
+      value: "season_trophie_emiliyo"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  seasonluukhiddde:
+    item: IRON_INGOT
+    name: "&fSeason Trophie luukhidde"
+    nbt:
+      key: "mtwcustom"
+      value: "season_trophie_luukhidde"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  seasonra4004:
+    item: IRON_INGOT
+    name: "&fSeason Trophie ra4004"
+    nbt:
+      key: "mtcustom"
+      value: "season_trophie_ra4004"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stallionbronze:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stallionbronze2:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Bronze 2"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_bronze2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stallionsilver:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stallionsilver2:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Silver 2"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_silver2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stalliongold:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  stalliongold2:
+    item: IRON_INGOT
+    name: "&fStallion Trophie Gold 2"
+    nbt:
+      key: "mtwcustom"
+      value: "stallion_trophie_gold2"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  talenttrofee:
+    item: IRON_INGOT
+    name: "&fTalent Trofee"
+    nbt:
+      key: "mtcustom"
+      value: "talent_trofee"
+    lore:
+      - '&7Verzamel item'
+    height: 0.93
+  tirebronze:
+    item: IRON_INGOT
+    name: "&fTire Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "tire_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  tiresilver:
+    item: IRON_INGOT
+    name: "&fTire Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "tire_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  tiregold:
+    item: IRON_INGOT
+    name: "&fTire Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "tire_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+  vanbronze:
+    item: IRON_INGOT
+    name: "&fVan Trophie Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "van_trophie_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  vansilver:
+    item: IRON_INGOT
+    name: "&fVan Trophie Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "van_trophie_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  vangold:
+    item: IRON_INGOT
+    name: "&fVan Trophie Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "van_trophie_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+
+
+  scooterbronze:
+    item: IRON_INGOT
+    name: "&fWaterscooter Bronze"
+    nbt:
+      key: "mtwcustom"
+      value: "trophie_waterscooter_bronze"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  scootersilver:
+    item: IRON_INGOT
+    name: "&fWaterscooter Silver"
+    nbt:
+      key: "mtwcustom"
+      value: "trophie_waterscooter_silver"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23
+  scootergold:
+    item: IRON_INGOT
+    name: "&fWaterscooter Gold"
+    nbt:
+      key: "mtwcustom"
+      value: "trophie_waterscooter_gold"
+    lore:
+      - '&7Verzamel item'
+    height: 0.23

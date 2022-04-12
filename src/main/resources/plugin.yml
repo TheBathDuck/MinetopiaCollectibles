@@ -1,0 +1,12 @@
+name: MinetopiaCollectibles
+version: '1.5'
+main: dev.thebathduck.accessoires.Accessoires
+authors: [ TheBathDuck ]
+description: Beta version.
+commands:
+  getcollectible:
+  collectibles:
+  editcollectible:
+    aliases: [editcollect]
+  mtcollectibles:
+    aliases: [minetopiacollectibles, mtcollect]
