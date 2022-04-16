@@ -21,7 +21,7 @@ import static dev.thebathduck.accessoires.utils.Utilities.getItemDisplayname;
 public class PickupListener implements Listener {
     private final Accessoires plugin = Accessoires.getPlugin(Accessoires.class);
     HashMap<Player, Long> cooldownList = new HashMap<>();
-    private int cooldownTime = 3;
+    private final int cooldownTime = 3;
     @EventHandler
     public void pickupCollectible(PlayerInteractAtEntityEvent e) {
         Player player = e.getPlayer();
