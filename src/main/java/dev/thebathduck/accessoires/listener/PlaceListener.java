@@ -1,15 +1,13 @@
 package dev.thebathduck.accessoires.listener;
 
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.ItemManager;
-import io.github.bananapuncher714.nbteditor.NBTEditor;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.ArmorStand;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -20,29 +18,32 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.UUID;
+import static dev.thebathduck.accessoires.utils.Utilities.color;
+import static dev.thebathduck.accessoires.utils.Utilities.getItemDisplayname;
 
 public class PlaceListener implements Listener {
-    @EventHandler(priority = EventPriority.HIGHEST) // Omdat mtvehicles schijt is.
+    @EventHandler(priority = EventPriority.HIGHEST) // Omdat mtvehicles schijt is. - KingDevCode: Ik ga akkoord
     public void onPlace(PlayerInteractEvent e) {
         Player player = e.getPlayer();
-        if (e.getItem() == null) return;
-        if(e.getClickedBlock() == null) return;
+
         ItemStack item = e.getItem();
         Block block = e.getClickedBlock();
-        if (!(e.getHand().equals(EquipmentSlot.HAND))) return;
-        if (!(e.getAction() == Action.RIGHT_CLICK_BLOCK)) return;
-        if(!(ItemManager.getNBTboolean(item, "isPlaceable") == true)) return;
+
+        if (item == null || block == null || e.getHand() != EquipmentSlot.HAND) return;
+        if (e.getAction() != Action.RIGHT_CLICK_BLOCK) return;
+        if(!ItemManager.getNBTboolean(item, "isPlaceable")) return;
+
         double height = ItemManager.getNBTdouble(item, "height");
         Location location = block.getLocation();
         Location fixedLocation = new Location(location.getWorld(), location.getX() + 0.5, location.getY() - height, location.getZ() + 0.5, player.getLocation().getYaw() + 180, location.getPitch());
-        String blockString = block.getType().toString().toLowerCase();
-        if (blockString.contains("slab") || blockString.contains("step")) {
+        String blockString = block.getType().toString();
+
+        if (blockString.contains("SLAB") || blockString.contains("STEP")) {
             if (block.getData() < 8) {
                 fixedLocation.subtract(0, 0.5, 0);
             }
         }
-        if (blockString.contains("carpet") || blockString.contains("snow")) {
+        if (blockString.contains("CARPET") || blockString.contains("SNOW")) {
             if (block.getData() < 8) {
                 fixedLocation.subtract(0, 0.96, 0);
                 if(blockString.contains("snow")) {
@@ -50,37 +51,22 @@ public class PlaceListener implements Listener {
                 }
             }
         }
-        ArmorStand as = (ArmorStand) location.getWorld().spawn(fixedLocation, ArmorStand.class);
+        ArmorStand as = (ArmorStand) location.getWorld().spawnEntity(fixedLocation, EntityType.ARMOR_STAND);
 
         as.setGravity(false);
-        as.setCustomName(Format.chat("placeable_" +player.getUniqueId() + ""));
+        as.setCustomName(color("placeable_" + player.getUniqueId() + ""));
+        as.setVisible(false);
+        as.setInvulnerable(true);
+
+        ItemStack hand = player.getInventory().getItemInMainHand();
+        as.setHelmet(hand);
+        hand.setAmount(hand.getAmount() - 1);
 
         // Check for debugmode
         JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
         FileConfiguration config = plugin.getConfig();
-        if(config.getBoolean("development.debugmode")) {
-            as.setCustomNameVisible(true);
-        } else {
-            as.setCustomNameVisible(false);
-        }
+        as.setCustomNameVisible(config.getBoolean("development.debugmode"));
 
-        as.setVisible(false);
-        as.setInvulnerable(true);
-
-        ItemStack hand = player.getInventory().getItemInHand();
-        as.setHelmet(hand);
-        if (hand.getAmount() != 1) {
-            hand.setAmount(hand.getAmount() -1);
-        } else {
-            hand.setAmount(hand.getAmount() - 1);
-            player.getInventory().setItemInHand(hand);
-        }
-        player.sendMessage(Format.chat("&6Je hebt je &c" + ChatColor.stripColor(item.getItemMeta().getDisplayName()) + " &6geplaatst."));
-
-
-
+        player.sendMessage(color("&6Je hebt je &c" + ChatColor.stripColor(getItemDisplayname(item)) + " &6geplaatst."));
     }
-
-
-
 }

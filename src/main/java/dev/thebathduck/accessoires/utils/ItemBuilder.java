@@ -15,6 +15,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import static dev.thebathduck.accessoires.utils.Utilities.color;
+
 /**
  * Easily create itemstacks, without messing your hands. <i>Note that if you do
  * use this in one of your projects, leave this notice.</i> <i>Please do credit
@@ -121,7 +123,7 @@ public class ItemBuilder {
      * @param name new name
      */
     public ItemBuilder setColoredName(String name) {
-        return setName(Format.chat(name));
+        return setName(color(name));
     }
 
     /**
@@ -238,7 +240,7 @@ public class ItemBuilder {
         List<String> lore = new ArrayList<>();
         if (im.hasLore())
             lore = new ArrayList<>(im.getLore());
-        lore.add(Format.chat(line));
+        lore.add(color(line));
         im.setLore(lore);
         is.setItemMeta(im);
         return this;

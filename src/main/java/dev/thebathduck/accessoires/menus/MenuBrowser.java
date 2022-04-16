@@ -1,7 +1,6 @@
 package dev.thebathduck.accessoires.menus;
 
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.ItemManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,31 +12,26 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Arrays;
+import static dev.thebathduck.accessoires.utils.Utilities.*;
 
 public class MenuBrowser implements Listener {
 
+    private static final Accessoires plugin = Accessoires.getPlugin(Accessoires.class);
+
     public static void open(Player player) {
-        JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
         FileConfiguration config = plugin.getConfig();
 
-        Inventory inventory = Bukkit.createInventory(null, 3 * 9, Format.chat("&6Accessoires Browser"));
+        Inventory inventory = Bukkit.createInventory(null, 27, color("&6Accessoires Browser"));
 
-        for (String catoName : config.getConfigurationSection("categorieen.").getKeys(false)) {
-            String catoDisplayName = Format.chat(config.getString("categorieen." + catoName + ".name"));
+        for (String catoName : config.getConfigurationSection("categorieen").getKeys(false)) {
+            String catoDisplayName = color(config.getString("categorieen." + catoName + ".name"));
             String noColorName = ChatColor.stripColor(catoDisplayName);
-            ItemStack catoItem = new ItemStack(Material.valueOf(config.getString("categorieen." + catoName + ".displayitem")));
-            ItemMeta meta = catoItem.getItemMeta();
-            meta.setDisplayName(catoDisplayName);
-            meta.setLore(Arrays.asList(
-                    "",
-                    Format.chat("&7Klik hier om alle accessoiren in"),
-                    Format.chat("&7de &f" + noColorName + " &7te bekijken.")
-            ));
-            catoItem.setItemMeta(meta);
+
+            ItemStack catoItem = createItemstack(Material.valueOf(config.getString("categorieen." + catoName + ".displayitem")),
+                    catoDisplayName,
+                    createLore("&7Klik hier om alle accessoiren in de &f" + noColorName + " &7te bekijken."));
+
             ItemManager.applyNBTTag(catoItem, "configValue", catoName);
             inventory.setItem(inventory.firstEmpty(), catoItem);
         }
@@ -48,13 +42,14 @@ public class MenuBrowser implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
         Player player = (Player) e.getWhoClicked();
-        if(e.getView().getTitle().equals(Format.chat("&6Accessoires Browser"))) {
+        if(e.getView().getTitle().equals(color("&6Accessoires Browser"))) {
             e.setCancelled(true);
-            if(e.getCurrentItem() == null) return;
-            if (e.getCurrentItem().getType().equals(Material.AIR)) return;
-            ItemStack item = e.getCurrentItem();
 
-            String clickedConfigValue = ItemManager.getNBTString(item, "configValue");
+            ItemStack is = e.getCurrentItem();
+
+            if(is == null || is.getType() == Material.AIR) return;
+
+            String clickedConfigValue = ItemManager.getNBTString(is, "configValue");
             if (clickedConfigValue == null) return;
             CatoList.open(player, clickedConfigValue);
         }

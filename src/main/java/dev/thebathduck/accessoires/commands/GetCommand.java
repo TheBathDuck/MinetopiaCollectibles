@@ -1,10 +1,7 @@
 package dev.thebathduck.accessoires.commands;
 
-import com.sun.tools.javac.Main;
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.ItemManager;
-import jdk.internal.org.jline.reader.ParsedLine;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -18,51 +15,48 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.List;
 
+import static dev.thebathduck.accessoires.utils.Utilities.color;
+import static dev.thebathduck.accessoires.utils.Utilities.createItemstack;
+
 public class GetCommand implements CommandExecutor {
+
+    private final Accessoires plugin = Accessoires.getPlugin(Accessoires.class);
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)) {
-            sender.sendMessage("Alleen een speler kan dit command uitvoeren.");
-            return false;
-        }
-        Player player = (Player) sender;
-        JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
-        FileConfiguration config = plugin.getConfig();
-        if(!(player.hasPermission("accessoires.getitem"))) {
-            player.sendMessage(Format.chat(config.getString("messages.nopermission")));
-            return false;
-        }
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
 
-        if (args.length != 1) {
-            player.sendMessage(Format.chat("&cGebruik: /getitem <Config naam>"));
-            return false;
-        }
-        String id = args[0];
+            FileConfiguration config = plugin.getConfig();
 
-        if(config.getString("items." + id + ".item") == null) {
-            player.sendMessage(Format.chat("&cItem niet gevonden."));
-            return false;
-        }
+            if (args.length == 1){
+                if(player.hasPermission("accessoires.getitem")) {
+                    if(config.getString("items." + args[0] + ".item") == null) {
+                        player.sendMessage(color("&cItem niet gevonden."));
+                        return false;
+                    }
+                    ArrayList<String> lore = new ArrayList<>();
+                    for(String loreLine : config.getStringList("items." + args[0] + ".lore"))
+                        lore.add(color(loreLine));
+                    String materialString = config.getString("items." + args[0] + ".item");
 
-        String materialString = config.getString("items."+id+".item");
-        ItemStack item = new ItemStack(Material.valueOf(materialString));
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Format.chat(config.getString("items." + id + ".name")));
-        List<String> lore = new ArrayList<>();
-        for(String loreLine : config.getStringList("items." + id + ".lore")) {
-            lore.add(Format.chat(loreLine));
-        }
-        meta.setLore(lore);
-        item.setItemMeta(meta);
-        String key = config.getString("items."+id+".nbt.key");
-        String value = config.getString("items."+id+".nbt.value");
-        double height = config.getDouble("items."+id+".height");
-        ItemManager.applyNBTTag(item, "isPlaceable", true);
-        ItemManager.applyNBTTag(item, key, value);
-        ItemManager.applyNBTTag(item, "height", height);
+                    ItemStack item = createItemstack(Material.valueOf(materialString),
+                            color(config.getString("items." + args[0] + ".name")),
+                            lore);
 
-        player.getInventory().addItem(item);
-        player.sendMessage(Format.chat("&aTest item ontvangen. &7(Height " + height + ")"));
+                    String key = config.getString("items." + args[0] + ".nbt.key");
+                    String value = config.getString("items." + args[0] + ".nbt.value");
+                    double height = config.getDouble("items." + args[0] + ".height");
+
+                    ItemManager.applyNBTTag(item, "isPlaceable", true);
+                    ItemManager.applyNBTTag(item, key, value);
+                    ItemManager.applyNBTTag(item, "height", height);
+
+                    player.getInventory().addItem(item);
+                    player.sendMessage(color("&aTest item ontvangen. &7(Height " + height + ")"));
+                }else player.sendMessage(color(config.getString("messages.nopermission")));
+            }else player.sendMessage(color("&cGebruik: /getitem <Config naam>"));
+        }else sender.sendMessage("Alleen een speler kan dit command uitvoeren.");
         return false;
     }
 }

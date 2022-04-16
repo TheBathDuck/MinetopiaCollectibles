@@ -14,6 +14,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.List;
 
+import static dev.thebathduck.accessoires.utils.Utilities.color;
+import static dev.thebathduck.accessoires.utils.Utilities.createItemstack;
+
 public class ItemManager {
 
     public static void fillLowerBar(Inventory inventory) {
@@ -65,23 +68,20 @@ public class ItemManager {
         FileConfiguration config = JavaPlugin.getPlugin(Accessoires.class).getConfig();
         String materialString = config.getString("items."+id+".item");
         if(materialString == null) {
-            player.sendMessage(Format.chat("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
+            player.sendMessage(color("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
         }
-        ItemStack item = new ItemStack(Material.valueOf(materialString));
-        if(item == null) {
-            player.sendMessage(Format.chat("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
-        }
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Format.chat(config.getString("items." + id + ".name")));
-        List<String> lore = new ArrayList<>();
-        for(String loreLine : config.getStringList("items." + id + ".lore")) {
-            lore.add(Format.chat(loreLine));
-        }
-        meta.setLore(lore);
-        item.setItemMeta(meta);
-        String key = config.getString("items."+id+".nbt.key");
-        String value = config.getString("items."+id+".nbt.value");
-        double height = config.getDouble("items."+id+".height");
+        ArrayList<String> lore = new ArrayList<>();
+        for(String loreLine : config.getStringList("items." + id + ".lore"))
+            lore.add(color(loreLine));
+
+        ItemStack item = createItemstack(Material.valueOf(materialString),
+                color(config.getString("items." + id + ".name")),
+                lore);
+
+        String key = config.getString("items." + id + ".nbt.key");
+        String value = config.getString("items." + id + ".nbt.value");
+        double height = config.getDouble("items." + id + ".height");
+
         applyNBTTag(item, "isPlaceable", true);
         applyNBTTag(item, key, value);
         applyNBTTag(item, "height", height);

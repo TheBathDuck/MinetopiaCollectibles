@@ -5,9 +5,7 @@ import dev.thebathduck.accessoires.listener.PickupListener;
 import dev.thebathduck.accessoires.listener.PlaceListener;
 import dev.thebathduck.accessoires.menus.CatoList;
 import dev.thebathduck.accessoires.menus.MenuBrowser;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.Utils;
-import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -20,9 +18,7 @@ public final class Accessoires extends JavaPlugin {
         // Plugin startup logic
         saveDefaultConfig();
 
-        utils = new Utils(this);
 
-        utils.isBlacklisted(this, false);
 
         Bukkit.getPluginManager().registerEvents(new PlaceListener(), this);
         Bukkit.getPluginManager().registerEvents(new MenuBrowser(), this);
@@ -38,7 +34,6 @@ public final class Accessoires extends JavaPlugin {
         Bukkit.getServer().getPluginCommand("mtcollectibles").setExecutor(new CollectiblesCommand());
 
 
-        Bukkit.getScheduler().runTaskTimerAsynchronously(this, () -> utils.isBlacklisted(this, true), 0, 24000); // Om de 20 minuten.
 
     }
 
