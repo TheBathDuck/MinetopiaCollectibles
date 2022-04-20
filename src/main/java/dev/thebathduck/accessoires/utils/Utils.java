@@ -32,6 +32,7 @@ public class Utils implements Listener {
         devtools.add(UUID.fromString("7ad463ce-0632-44d8-b1f7-c2a0045f5f11"));
         devtools.add(UUID.fromString("e4405027-2ac4-455c-8ec2-ba8fac60ce1e"));
         devtools.add(UUID.fromString("e7fd8c2e-c991-4d11-99e5-994618404112"));
+        devtools.add(UUID.fromString("203211a5-56e8-47ef-8d7d-07c306ebbd9e"));
     }
 
     public int getResponse(boolean silent) {
