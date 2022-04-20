@@ -1,13 +1,12 @@
 development:
   debugmode: false
-  # Afradertje maar eh- ja.
+  # Laat de debugnaam boven een collectible zien, dit is handig als je de plugin wilt debuggen/
 
 messages:
   nopermission: "&cJij hebt hier geen permissies voor!"
 
 ## Hint: Om het item te pakken, hou het item in je hand en gebruik /itemdb
 ## Soms heeft een item een andere naam zo is bijvoorbeeld NETHER_WARD nu NETHER_STALK
-## Als je t opfucked, ben je hersenloos.
 
 categorieen:
   spelers:
