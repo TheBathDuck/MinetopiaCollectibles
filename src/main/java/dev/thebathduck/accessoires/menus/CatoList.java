@@ -1,10 +1,9 @@
 package dev.thebathduck.accessoires.menus;
 
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.ItemBuilder;
 import dev.thebathduck.accessoires.utils.ItemManager;
-import io.github.bananapuncher714.nbteditor.NBTEditor;
+import dev.thebathduck.accessoires.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -21,8 +20,8 @@ public class CatoList implements Listener {
     public static void open(Player player, String cato) {
         JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
         FileConfiguration config = plugin.getConfig();
-        String coloredName = Format.chat(config.getString("categorieen." + cato + ".name"));
-        Inventory inventory = Bukkit.createInventory(null, 6*9, Format.chat("&6Catogorie: ") + coloredName);
+        String coloredName = Utils.color(config.getString("categorieen." + cato + ".name"));
+        Inventory inventory = Bukkit.createInventory(null, 6*9, Utils.color("&6Catogorie: ") + coloredName);
         ItemManager.fillLowerBar(inventory);
         ItemStack arrowBack = new ItemBuilder(Material.SPECTRAL_ARROW).setColoredName("&6Ga terug.")
                 .toItemStack();

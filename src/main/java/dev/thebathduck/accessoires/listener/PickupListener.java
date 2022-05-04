@@ -1,10 +1,8 @@
 package dev.thebathduck.accessoires.listener;
 
 import dev.thebathduck.accessoires.utils.Cooldown;
-import dev.thebathduck.accessoires.utils.Format;
-import dev.thebathduck.accessoires.utils.ItemManager;
+import dev.thebathduck.accessoires.utils.Utils;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -29,15 +27,15 @@ public class PickupListener implements Listener {
         if(!isOwner(player, as.getCustomName())) {
 
             if(!player.hasPermission("collecticles.bypass")) {
-                player.sendMessage(Format.chat("&cDit items is niet van jou!"));
+                player.sendMessage(Utils.color("&cDit item is niet van jou!"));
                 return;
             } else {
-                player.sendMessage(Format.chat("&6Je hebt een item &cgeforceerd &6opgepakt."));
+                player.sendMessage(Utils.color("&6Je hebt een item &cgeforceerd &6opgepakt."));
             }
         }
 
         if(Cooldown.isOnCooldown(player) == true) {
-            player.sendMessage(Format.chat("&cJe kan dit niet zo snel doen."));
+            player.sendMessage(Utils.color("&cJe kan dit niet zo snel doen."));
             return;
         }
 
@@ -47,7 +45,7 @@ public class PickupListener implements Listener {
         player.getInventory().addItem(item);
         as.remove();
 
-        player.sendMessage(Format.chat("&6Je hebt je &c" + ChatColor.stripColor(item.getItemMeta().getDisplayName()) + " &6opgepakt."));
+        player.sendMessage(Utils.color("&6Je hebt je &c" + ChatColor.stripColor(item.getItemMeta().getDisplayName()) + " &6opgepakt."));
     }
 
     public boolean isOwner(Player player, String asName) {

@@ -121,7 +121,7 @@ public class ItemBuilder {
      * @param name new name
      */
     public ItemBuilder setColoredName(String name) {
-        return setName(Format.chat(name));
+        return setName(Utils.color(name));
     }
 
     /**
@@ -238,7 +238,7 @@ public class ItemBuilder {
         List<String> lore = new ArrayList<>();
         if (im.hasLore())
             lore = new ArrayList<>(im.getLore());
-        lore.add(Format.chat(line));
+        lore.add(Utils.color(line));
         im.setLore(lore);
         is.setItemMeta(im);
         return this;

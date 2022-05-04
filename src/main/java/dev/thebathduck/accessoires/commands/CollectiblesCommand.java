@@ -1,7 +1,7 @@
 package dev.thebathduck.accessoires.commands;
 
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
+import dev.thebathduck.accessoires.utils.Utils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,15 +20,15 @@ public class CollectiblesCommand implements CommandExecutor {
         JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
         FileConfiguration config = plugin.getConfig();
         if(!(player.hasPermission("collectibles.edit"))) {
-            player.sendMessage(Format.chat(config.getString("messages.nopermission")));
+            player.sendMessage(Utils.color(config.getString("messages.nopermission")));
             return false;
         }
 
-        player.sendMessage(Format.chat("&eMinetopiaCollectibles versie &6" + plugin.getDescription().getVersion() + "&e!"));
-        player.sendMessage(Format.chat("&7&oCommands:"));
-        player.sendMessage(Format.chat(" &e/getcollectible <Config Naam> &7- &6Pak een collectible bij naam."));
-        player.sendMessage(Format.chat(" &e/collectibles &7- &6Scroll door de collectibles via een menu."));
-        player.sendMessage(Format.chat(" &e/editcollectible <Optie> &7- &6Edit een collectible"));
+        player.sendMessage(Utils.color("&eMinetopiaCollectibles versie &6" + plugin.getDescription().getVersion() + "&e!"));
+        player.sendMessage(Utils.color("&7&oCommands:"));
+        player.sendMessage(Utils.color(" &e/getcollectible <Config Naam> &7- &6Pak een collectible bij naam."));
+        player.sendMessage(Utils.color(" &e/collectibles &7- &6Scroll door de collectibles via een menu."));
+        player.sendMessage(Utils.color(" &e/editcollectible <Optie> &7- &6Edit een collectible"));
 
         return false;
     }

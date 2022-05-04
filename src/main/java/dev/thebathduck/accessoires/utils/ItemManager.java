@@ -65,17 +65,17 @@ public class ItemManager {
         FileConfiguration config = JavaPlugin.getPlugin(Accessoires.class).getConfig();
         String materialString = config.getString("items."+id+".item");
         if(materialString == null) {
-            player.sendMessage(Format.chat("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
+            player.sendMessage(Utils.color("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
         }
         ItemStack item = new ItemStack(Material.valueOf(materialString));
         if(item == null) {
-            player.sendMessage(Format.chat("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
+            player.sendMessage(Utils.color("&cEr ging iets mis met het aanmaken van de collectible &4" + id + "&c. (MOGELIJK_CONFIG_ERROR)"));
         }
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Format.chat(config.getString("items." + id + ".name")));
+        meta.setDisplayName(Utils.color(config.getString("items." + id + ".name")));
         List<String> lore = new ArrayList<>();
         for(String loreLine : config.getStringList("items." + id + ".lore")) {
-            lore.add(Format.chat(loreLine));
+            lore.add(Utils.color(loreLine));
         }
         meta.setLore(lore);
         item.setItemMeta(meta);

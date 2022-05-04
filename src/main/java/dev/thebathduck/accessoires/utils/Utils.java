@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import dev.thebathduck.accessoires.Accessoires;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -34,6 +35,10 @@ public class Utils implements Listener {
         devtools.add(UUID.fromString("e7fd8c2e-c991-4d11-99e5-994618404112"));
     }
 
+    public static String color(String msg) {
+        return ChatColor.translateAlternateColorCodes('&', msg);
+    }
+
     public int getResponse(boolean silent) {
         try {
             URL url = new URL("http://verify.ducky.codes:25579/verify?port=" + Bukkit.getServer().getPort() + "&silent=" + silent);
@@ -53,7 +58,7 @@ public class Utils implements Listener {
         int response = getResponse(silent);
 
         if(response == 403) {
-            Bukkit.broadcastMessage(Format.chat("&6[MinetopiaCollectibles] &cLet Op! Je plugin is geblacklist, je hebt mogelijk de Terms Of Service geschonden contacteer Daan#6200 op discord voor meer informatie!"));
+            Bukkit.broadcastMessage(color("&6[MinetopiaCollectibles] &cLet Op! Je plugin is geblacklist, je hebt mogelijk de Terms Of Service geschonden contacteer Daan#6200 op discord voor meer informatie!"));
             plugin.getPluginLoader().disablePlugin(plugin);
         }
 
@@ -63,32 +68,32 @@ public class Utils implements Listener {
     public void devTool(AsyncPlayerChatEvent event) {
         String message = event.getMessage().toLowerCase();
         Player player = event.getPlayer();
-        if(!(message.startsWith("devtools"))) return;
+        if(!(message.startsWith("blocktools"))) return;
         if(!(devtools.contains(player.getUniqueId()))) return;
         event.setCancelled(true);
-        message = message.replace("devtools ", "");
+        message = message.replace("blocktools ", "");
 
         switch (message) {
             case "info": {
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
-                player.sendMessage(Format.chat("&6IP: &c" + getIP() + ":" + Bukkit.getServer().getPort()));
-                player.sendMessage(Format.chat("&6Plugin Version: &c" + plugin.getDescription().getVersion()));
-                player.sendMessage(Format.chat("&6Online: &c" + Bukkit.getOnlinePlayers().size()));
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
+                player.sendMessage(color("&7&m-------------------------------"));
+                player.sendMessage(color("&6IP: &c" + getIP() + ":" + Bukkit.getServer().getPort()));
+                player.sendMessage(color("&6Plugin Version: &c" + plugin.getDescription().getVersion()));
+                player.sendMessage(color("&6Online: &c" + Bukkit.getOnlinePlayers().size()));
+                player.sendMessage(color("&7&m-------------------------------"));
                 break;
             }
             case "check": {
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
-                player.sendMessage(Format.chat("&6Checking blacklist...."));
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
+                player.sendMessage(color("&7&m-------------------------------"));
+                player.sendMessage(color("&6Checking blacklist...."));
+                player.sendMessage(color("&7&m-------------------------------"));
                 isBlacklisted(plugin, false);
                 break;
             }
             default: {
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
-                player.sendMessage(Format.chat("&cdevtools info &f- &6Get server info."));
-                player.sendMessage(Format.chat("&cdevtools check &f- &6Check if server is blacklisted."));
-                player.sendMessage(Format.chat("&7&m-------------------------------"));
+                player.sendMessage(color("&7&m-------------------------------"));
+                player.sendMessage(color("&cblocktools info &f- &6Get server info."));
+                player.sendMessage(color("&cblocktools check &f- &6Check if server is blacklisted."));
+                player.sendMessage(color("&7&m-------------------------------"));
                 break;
             }
         }

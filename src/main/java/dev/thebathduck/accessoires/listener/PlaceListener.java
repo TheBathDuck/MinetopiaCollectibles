@@ -1,12 +1,10 @@
 package dev.thebathduck.accessoires.listener;
 
 import dev.thebathduck.accessoires.Accessoires;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.ItemManager;
-import io.github.bananapuncher714.nbteditor.NBTEditor;
+import dev.thebathduck.accessoires.utils.Utils;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.ArmorStand;
@@ -19,8 +17,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.UUID;
 
 public class PlaceListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST) // Omdat mtvehicles schijt is.
@@ -53,7 +49,7 @@ public class PlaceListener implements Listener {
         ArmorStand as = (ArmorStand) location.getWorld().spawn(fixedLocation, ArmorStand.class);
 
         as.setGravity(false);
-        as.setCustomName(Format.chat("placeable_" +player.getUniqueId() + ""));
+        as.setCustomName(Utils.color("placeable_" +player.getUniqueId() + ""));
 
         // Check for debugmode
         JavaPlugin plugin = JavaPlugin.getPlugin(Accessoires.class);
@@ -75,7 +71,7 @@ public class PlaceListener implements Listener {
             hand.setAmount(hand.getAmount() - 1);
             player.getInventory().setItemInHand(hand);
         }
-        player.sendMessage(Format.chat("&6Je hebt je &c" + ChatColor.stripColor(item.getItemMeta().getDisplayName()) + " &6geplaatst."));
+        player.sendMessage(Utils.color("&6Je hebt je &c" + ChatColor.stripColor(item.getItemMeta().getDisplayName()) + " &6geplaatst."));
 
 
 

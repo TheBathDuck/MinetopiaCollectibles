@@ -5,9 +5,7 @@ import dev.thebathduck.accessoires.listener.PickupListener;
 import dev.thebathduck.accessoires.listener.PlaceListener;
 import dev.thebathduck.accessoires.menus.CatoList;
 import dev.thebathduck.accessoires.menus.MenuBrowser;
-import dev.thebathduck.accessoires.utils.Format;
 import dev.thebathduck.accessoires.utils.Utils;
-import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
